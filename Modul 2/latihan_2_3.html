@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Latihan 2.3</title>
+    <link rel="icon" type="image/png" href="gambar/icon.png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Form Pendaftaran Mahasiswa Baru Nih ^-^</h1>
+    </div>
+        <hr>
+        <div id="content">
+            <form action="proses.php" method="post" enctype="multipart/form-data">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama"><br><br>
+
+                <label for="ttl">Tempat/Tanggal Lahir:</label>
+                <input type="text" id="ttl" name="ttl" placeholder="DD-MM-YYYY"><br><br>
+
+                <label for="agama">Agama:</label>
+                <select id="agama" name="agama">
+                    <option>Islam</option>
+                    <option>Kristen</option>
+                    <option>Katolik</option>
+                    <option>Hindu</option>
+                    <option>Budha</option>
+                    <option>Konghucu</option>
+                </select><br><br>
+
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="laki" name="jk" value="Laki-laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jk" value="Perempuan">
+                <label for="perempuan">Perempuan</label><br><br>
+
+                <label for="ijazah">No. Ijazah SMA/MA:</label>
+                <input type="text" id="ijazah" name="ijazah"><br><br>
+
+                <label for="foto">Foto (Maks. 20KB):</label>
+                <input type="file" id="foto" name="foto"><br><br>
+
+                <label for="ayah">Nama Ayah:</label>
+                <input type="text" id="ayah" name="ayah"><br><br>
+
+                <label for="ibu">Nama Ibu:</label>
+                <input type="text" id="ibu" name="ibu"><br><br>
+
+                <label for="alamat">Alamat Rumah:</label>
+                <textarea id="alamat" name="alamat"></textarea><br><br>
+
+                <label for="telp">No. Telp:</label>
+                <input type="tel" id="telp" name="telp"><br><br>
+
+                <label for="sekolah">Nama Sekolah Asal:</label>
+                <input type="text" id="sekolah" name="sekolah"><br><br>
+
+                <label for="alamat_sekolah">Alamat Sekolah Asal:</label>
+                <textarea id="alamat_sekolah" name="alamat_sekolah"></textarea><br><br>
+
+                <label for="jurusan">Jurusan Dipilih:</label>
+                <select id="jurusan" name="jurusan">
+                    <option>Komputerisasi Akuntansi</option>
+                    <option>Administrasi Bisnis</option>
+                    <option>Teknik Komputer Kontrol</option>
+                    <option>Teknik Listrik</option>
+                    <option>Mesin Otomotif</option>
+                    <option>Perkeretaapian</option>
+                    <option>Teknologi Informasi</option>
+                    <option>Akuntansi</option>
+                </select><br><br>
+
+                <label>Mengetahui informasi ini dari mana :</label>
+                <input type="checkbox" name="info" value="Koran"> Koran
+                <input type="checkbox" name="info" value="Website"> Website
+                <input type="checkbox" name="info" value="Televisi"> Televisi
+                <input type="checkbox" name="info" value="Radio"> Radio
+                <input type="checkbox" name="info" value="Teman"> Teman<br><br>
+
+                <input type="submit" value="DAFTAR">
+                <input type="reset" value="BATAL">
+            </form>
+        </div>
+        <hr>
+        <div id="footer">
+            <i>copyright@AylaNurRamadhani_253307006_2026</i>
+        </div>
+    </div>
+</body>
+</html>
