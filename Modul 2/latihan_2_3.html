@@ -1,24 +1,73 @@
 <!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <title>Latihan 2.3</title>
     <link rel="icon" type="image/png" href="gambar/icon.png" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #header, #footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            border: 2px solid #333;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+        }
+        .form-group {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+        .form-group label {
+            width: 200px;
+            font-weight: bold;
+        }
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            flex: 1;
+            padding: 5px;
+        }
+        .form-actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+        hr {
+            margin: 30px 0;
+        }
+    </style>
 </head>
 <body>
     <div id="header">
         <h1>Form Pendaftaran Mahasiswa Baru Nih ^-^</h1>
     </div>
-        <hr>
-        <div id="content">
-            <form action="proses.php" method="post" enctype="multipart/form-data">
+
+    <div id="content">
+        <form action="proses.php" method="post" enctype="multipart/form-data">
+            
+            <div class="form-group">
                 <label for="nama">Nama Lengkap:</label>
-                <input type="text" id="nama" name="nama"><br><br>
+                <input type="text" id="nama" name="nama">
+            </div>
 
+            <div class="form-group">
                 <label for="ttl">Tempat/Tanggal Lahir:</label>
-                <input type="text" id="ttl" name="ttl" placeholder="DD-MM-YYYY"><br><br>
+                <input type="text" id="ttl" name="ttl" placeholder="Tempat Lahir"><br>
+                <input type="number" id="tanggal" name="tanggal" min="1" max="31" placeholder="Tanggal"><br>
+                <input type="number" id="bulan" name="bulan" min="1" max="12" placeholder="Bulan"><br>
+                <input type="number" id="tahun" name="tahun" min="2000" max="2015" placeholder="Tahun"><br>
+            </div>
 
+            <div class="form-group">
                 <label for="agama">Agama:</label>
                 <select id="agama" name="agama">
                     <option>Islam</option>
@@ -27,38 +76,58 @@
                     <option>Hindu</option>
                     <option>Budha</option>
                     <option>Konghucu</option>
-                </select><br><br>
+                </select>
+            </div>
 
+            <div class="form-group">
                 <label>Jenis Kelamin:</label>
                 <input type="radio" id="laki" name="jk" value="Laki-laki">
                 <label for="laki">Laki-laki</label>
                 <input type="radio" id="perempuan" name="jk" value="Perempuan">
-                <label for="perempuan">Perempuan</label><br><br>
+                <label for="perempuan">Perempuan</label>
+            </div>
 
+            <div class="form-group">
                 <label for="ijazah">No. Ijazah SMA/MA:</label>
-                <input type="text" id="ijazah" name="ijazah"><br><br>
+                <input type="text" id="ijazah" name="ijazah">
+            </div>
 
+            <div class="form-group">
                 <label for="foto">Foto (Maks. 20KB):</label>
-                <input type="file" id="foto" name="foto"><br><br>
+                <input type="file" id="foto" name="foto">
+            </div>
 
+            <div class="form-group">
                 <label for="ayah">Nama Ayah:</label>
-                <input type="text" id="ayah" name="ayah"><br><br>
+                <input type="text" id="ayah" name="ayah">
+            </div>
 
+            <div class="form-group">
                 <label for="ibu">Nama Ibu:</label>
-                <input type="text" id="ibu" name="ibu"><br><br>
+                <input type="text" id="ibu" name="ibu">
+            </div>
 
+            <div class="form-group">
                 <label for="alamat">Alamat Rumah:</label>
-                <textarea id="alamat" name="alamat"></textarea><br><br>
+                <textarea id="alamat" name="alamat"></textarea>
+            </div>
 
+            <div class="form-group">
                 <label for="telp">No. Telp:</label>
-                <input type="tel" id="telp" name="telp"><br><br>
+                <input type="tel" id="telp" name="telp">
+            </div>
 
+            <div class="form-group">
                 <label for="sekolah">Nama Sekolah Asal:</label>
-                <input type="text" id="sekolah" name="sekolah"><br><br>
+                <input type="text" id="sekolah" name="sekolah">
+            </div>
 
+            <div class="form-group">
                 <label for="alamat_sekolah">Alamat Sekolah Asal:</label>
-                <textarea id="alamat_sekolah" name="alamat_sekolah"></textarea><br><br>
+                <textarea id="alamat_sekolah" name="alamat_sekolah"></textarea>
+            </div>
 
+            <div class="form-group">
                 <label for="jurusan">Jurusan Dipilih:</label>
                 <select id="jurusan" name="jurusan">
                     <option>Komputerisasi Akuntansi</option>
@@ -69,23 +138,31 @@
                     <option>Perkeretaapian</option>
                     <option>Teknologi Informasi</option>
                     <option>Akuntansi</option>
-                </select><br><br>
+                </select>
+            </div>
 
-                <label>Mengetahui informasi ini dari mana :</label>
-                <input type="checkbox" name="info" value="Koran"> Koran
-                <input type="checkbox" name="info" value="Website"> Website
-                <input type="checkbox" name="info" value="Televisi"> Televisi
-                <input type="checkbox" name="info" value="Radio"> Radio
-                <input type="checkbox" name="info" value="Teman"> Teman<br><br>
+            <div class="form-group">
+                <label>Mengetahui informasi ini dari mana:</label>
+                <div>
+                    <input type="checkbox" name="info" value="Koran"> Koran
+                    <input type="checkbox" name="info" value="Website"> Website
+                    <input type="checkbox" name="info" value="Televisi"> Televisi
+                    <input type="checkbox" name="info" value="Radio"> Radio
+                    <input type="checkbox" name="info" value="Teman"> Teman
+                </div>
+            </div>
 
+            <div class="form-actions">
                 <input type="submit" value="DAFTAR">
                 <input type="reset" value="BATAL">
-            </form>
-        </div>
-        <hr>
-        <div id="footer">
-            <i>copyright@AylaNurRamadhani_253307006_2026</i>
-        </div>
+            </div>
+        </form>
+    </div>
+
+    <hr>
+
+    <div id="footer">
+        <i>copyright@AylaNurRamadhani_253307006_2026</i>
     </div>
 </body>
 </html>
