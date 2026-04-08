@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<title>SVG</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+*{box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+margin:0;
+background:#fff0f6;
+}
+
+header{
+background:linear-gradient(90deg,#ff4fa3,#ff8fd1);
+padding:30px;
+text-align:center;
+font-size:35px;
+color:white;
+font-family:'Pacifico',cursive;
+}
+
+nav{
+float:left;
+width:30%;
+background:#ffd9ec;
+padding:20px;
+border-right:4px solid #ff4f98;
+height:660px;
+}
+
+nav a{
+display:block;
+padding:10px;
+margin-bottom:8px;
+text-decoration:none;
+font-weight:bold;
+color:#c2185b;
+border-radius:6px;
+font-family:'Quicksand',sans-serif;
+}
+
+nav a:hover{
+background:#ff89ca;
+transform:translateX(5px);
+}
+
+article{
+float:left;
+padding:20px;
+width:70%;
+background:white;
+height:660px;
+}
+
+article h1{
+font-family:'Quicksand',sans-serif;
+color:#d81b60;
+}
+
+.svg-box{
+background:#fff0f6;
+border:2px solid #ff8fd1;
+border-radius:10px;
+padding:20px;
+display:inline-block;
+}
+
+section::after{
+content:"";
+display:table;
+clear:both;
+}
+
+footer{
+background:#c2185b;
+padding:10px;
+text-align:center;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Halaman SVG HTML5 ^-^</h2>
+</header>
+
+<section>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="gambar.html">Gambar</a>
+<a href="event.html">Event</a>
+<a href="audio.html">Audio</a>
+<a href="video.html">Video</a>
+<a href="svg.html">SVG</a>
+<a href="canvas.html">Canvas</a>
+<a href="pendaftaran.html">Pendaftaran</a>
+</nav>
+
+<article>
+
+<h1>Bentuk svg Punyaku Nih ^-^</h1>
+
+<div class="svg-box">
+<svg width="400" height="250">
+
+<!-- love -->
+<path d="M200 80 
+C200 40 150 40 150 80
+C150 120 200 140 200 160
+C200 140 250 120 250 80
+C250 40 200 40 200 80"
+stroke="white"
+stroke-width="3"
+fill="pink"/>
+
+<!-- lingkaran -->
+<circle cx="80" cy="80" r="40"
+stroke="white"
+stroke-width="3"
+fill="pink"/>
+
+<!-- kotak -->
+<rect x="300" y="40"
+width="80"
+height="80"
+fill="pink"
+stroke="white"
+stroke-width="3"/>
+
+</svg>
+</div>
+
+</article>
+
+</section>
+
+<footer>
+<p>&copy; 2026 - Praktikum HTML5 | Ayla Nur Ramadhani</p>
+</footer>
+
+</body>
+</html>

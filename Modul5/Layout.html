@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Layout Grid</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#fff0f6;
+}
+
+.layout-container{
+display:grid;
+grid-template-areas:
+"header header header"
+"menu main right"
+"menu footer footer";
+grid-template-columns:200px 1fr 200px;
+gap:10px;
+padding:10px;
+}
+
+/* BOX STYLE */
+.header, .menu, .main, .right, .footer{
+border-radius:15px;
+padding:20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* AREA */
+.header{
+grid-area:header;
+background:linear-gradient(90deg,#ff4fa3,#ff8fd1);
+color:white;
+text-align:center;
+font-family:'Pacifico';
+}
+
+.menu{
+grid-area:menu;
+background:#ffd9ec;
+}
+
+.main{
+grid-area:main;
+background:white;
+text-align:center;
+}
+
+.right{
+grid-area:right;
+background:#ffd9ec;
+text-align:center;
+}
+
+.footer{
+grid-area:footer;
+background:#c2185b;
+color:white;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="layout-container">
+
+<div class="header">🌸 My Website 🌸</div>
+
+<div class="menu">
+Menu<br>Home<br>Audio<br>Video<br>SVG
+</div>
+
+<div class="main">
+Konten Utama 💖
+</div>
+
+<div class="right">
+Sidebar 🌷
+</div>
+
+<div class="footer">
+© 2026 | Ayla Nur Ramadhani - 253307006
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Website HTML5 Ayla</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&family=Poppins&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#fff0f6;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(90deg,#ff4fa3,#ff8fd1);
+padding:35px;
+text-align:center;
+color:white;
+font-family:'Pacifico',cursive;
+font-size:32px;
+letter-spacing:2px;
+}
+
+/* NAVIGATION */
+
+nav{
+float:left;
+width:30%;
+background:#ffd9ec;
+padding:20px;
+border-right:4px solid #ff4f98;
+height:500px;
+}
+
+nav a{
+display:block;
+padding:12px;
+margin-bottom:10px;
+text-decoration:none;
+font-weight:bold;
+color:#c2185b;
+border-radius:8px;
+font-family:'Quicksand',sans-serif;
+transition:0.3s;
+}
+
+nav a:hover{
+background:#ff89ca;
+transform:translateX(5px);
+}
+
+/* ARTICLE */
+
+article{
+float:left;
+width:70%;
+padding:20px;
+background:white;
+height:500px;
+}
+
+article h1{
+font-family:'Quicksand',sans-serif;
+color:#d81b60;
+}
+
+/* FRAME / BOX */
+
+.box{
+border:3px solid #ff8fd1;
+padding:15px;
+border-radius:12px;
+background:#fff5fa;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+margin-top:20px;
+}
+
+/* IMAGE */
+
+img{
+width:250px;
+border-radius:10px;
+border:3px solid #ff8fd1;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+img:hover{
+transform:scale(1.05);
+}
+
+/* CLEAR */
+
+section::after{
+content:"";
+display:table;
+clear:both;
+}
+
+/* FOOTER */
+
+footer{
+background:#c2185b;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>Website Praktikum HTML5 Ayla</h2>
+</header>
+
+<section>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="gambar.html">Gambar</a>
+<a href="event.html">Event</a>
+<a href="audio.html">Audio</a>
+<a href="video.html">Video</a>
+<a href="svg.html">SVG</a>
+<a href="canvas.html">Canvas</a>
+<a href="pendaftaran.html">Pendaftaran</a>
+
+</nav>
+
+<article>
+
+<h1>Selamat Datang Yaa di HTML Ayla ^-^</h1>
+
+<div class="box">
+
+<p>
+Website ini merupakan hasil praktikum HTML5 yang berisi berbagai fitur seperti gambar, audio, video, canvas, SVG, dan form pendaftaran.
+</p>
+
+<p>
+Semua halaman dibuat dengan tema warna pink agar terlihat lebih menarik dan konsisten.
+</p>
+
+</div>
+<br>
+<img src="gambar/cat.git.gif">
+
+</article>
+
+</section>
+
+<footer>
+<p>&copy; 2026 - Praktikum HTML5 | Ayla Nur Ramadhani</p>
+</footer>
+
+</body>
+</html>

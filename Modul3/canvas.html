@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<title>Canvas HTML 5</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+margin:0;
+background:#fff0f6;
+}
+
+header{
+background:linear-gradient(90deg,#ff4fa3,#ff8fd1);
+padding:30px;
+text-align:center;
+font-size:35px;
+color:white;
+font-family:'Pacifico',cursive;
+}
+
+nav{
+float:left;
+width:30%;
+background:#ffd9ec;
+padding:20px;
+border-right:4px solid #ff4f98;
+height:660px;
+}
+
+nav a{
+display:block;
+padding:10px;
+margin-bottom:8px;
+text-decoration:none;
+font-weight:bold;
+color:#c2185b;
+border-radius:6px;
+font-family:'Quicksand',sans-serif;
+}
+
+nav a:hover{
+background:#ff89ca;
+transform:translateX(5px);
+}
+
+article{
+float:left;
+padding:20px;
+width:70%;
+background:white;
+height:660px;
+}
+
+article h1{
+font-family:'Quicksand',sans-serif;
+color:#d81b60;
+}
+
+.canvas-box{
+background:#fff0f6;
+border:2px solid #ff8fd1;
+border-radius:10px;
+padding:20px;
+margin-top:20px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+canvas{
+border:2px solid #ff4fa3;
+}
+
+section::after{
+content:"";
+display:table;
+clear:both;
+}
+
+footer{
+background:#c2185b;
+padding:10px;
+text-align:center;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Ini Adalah Canvas HTML 5 ^-^</h2>
+</header>
+
+<section>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="gambar.html">Gambar</a>
+<a href="event.html">Event</a>
+<a href="audio.html">Audio</a>
+<a href="video.html">Video</a>
+<a href="svg.html">SVG</a>
+<a href="canvas.html">Canvas</a>
+<a href="pendaftaran.html">Pendaftaran</a>
+</nav>
+
+<article>
+
+<h1>Contoh Canvas Guys</h1>
+
+<div class="canvas-box">
+<canvas id="myCanvas" width="300" height="200"></canvas>
+</div>
+
+<script>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.fillStyle="pink";
+ctx.fillRect(50,50,150,100);
+</script>
+
+</article>
+
+</section>
+
+<footer>
+<p>&copy; 2026 - Praktikum HTML5 | Ayla Nur Ramadhani</p>
+</footer>
+
+</body>
+</html>

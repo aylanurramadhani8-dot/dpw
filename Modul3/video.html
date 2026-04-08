@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<title>Video HTML5</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+*{box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+margin:0;
+background:#fff0f6;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(90deg,#ff4fa3,#ff8fd1);
+padding:30px;
+text-align:center;
+color:white;
+font-family:'Pacifico';
+}
+
+/* NAV */
+
+nav{
+float:left;
+width:30%;
+background:#ffd9ec;
+padding:20px;
+border-right:4px solid #ff4f98;
+height:660px;
+}
+
+nav a{
+display:block;
+padding:10px;
+margin-bottom:8px;
+text-decoration:none;
+font-weight:bold;
+color:#c2185b;
+border-radius:6px;
+font-family:'Quicksand';
+transition:0.3s;
+}
+
+nav a:hover{
+background:#ff89ca;
+transform:translateX(5px);
+}
+
+/* ARTICLE */
+
+article{
+float:left;
+width:70%;
+padding:25px;
+background:white;
+height:660px;
+}
+
+article h1{
+font-family:'Quicksand';
+color:#d81b60;
+}
+
+/* VIDEO BOX */
+
+.media-box{
+background:#fff0f6;
+border:2px solid #ff8fd1;
+border-radius:10px;
+padding:20px;
+margin-bottom:20px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+video{
+width:100%;
+border-radius:8px;
+}
+
+iframe{
+width:100%;
+height:250px;
+border-radius:8px;
+border:none;
+}
+
+/* CLEAR */
+
+section::after{
+content:"";
+display:table;
+clear:both;
+}
+
+/* FOOTER */
+
+footer{
+background:#c2185b;
+padding:10px;
+text-align:center;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Video HTML5 ^-^</h2>
+</header>
+
+<section>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="gambar.html">Gambar</a>
+<a href="event.html">Event</a>
+<a href="audio.html">Audio</a>
+<a href="video.html">Video</a>
+<a href="svg.html">SVG</a>
+<a href="canvas.html">Canvas</a>
+<a href="pendaftaran.html">Pendaftaran</a>
+</nav>
+
+<article>
+
+<h1>Video HTML5</h1>
+
+<div class="media-box">
+
+<h3>Video Lokal</h3>
+
+<video controls autoplay muted>
+<source src="video/video.mp4" type="video/mp4">
+Browser tidak mendukung video.
+</video>
+
+</div>
+
+<div class="media-box">
+
+<h3>Video YouTube</h3>
+
+<iframe
+src="https://www.youtube.com/embed/nTbA7qrEsP0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</article>
+
+</section>
+
+<footer>
+<p>&copy; 2026 - Praktikum HTML5 | Ayla Nur Ramadhani</p>
+</footer>
+
+</body>
+</html>

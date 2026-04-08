@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Halaman Pendaftaran</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+*{box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+margin:0;
+background:#fff0f6;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(90deg,#ff4fa3,#ff8fd1);
+padding:30px;
+text-align:center;
+font-size:35px;
+color:rgb(255, 255, 255);
+font-family:'Pacifico',cursive;
+}
+
+/* NAV */
+
+nav{
+float:left;
+width:30%;
+background:#ffd9ec;
+padding:20px;
+border-right:4px solid #ff4f98;
+height:650px;
+}
+
+nav a{
+display:block;
+padding:10px;
+margin-bottom:8px;
+text-decoration:none;
+font-weight:bold;
+color:#c2185b;
+border-radius:6px;
+font-family:'Quicksand';
+}
+
+nav a:hover{
+background:#ff89ca;
+}
+
+/* ARTICLE */
+
+article{
+float:left;
+width:70%;
+padding:20px;
+background:white;
+height:650px;
+}
+
+h2{
+color:#ffffff;
+}
+
+/* FORM */
+
+form{
+width:80%;
+padding:20px;
+border-radius:10px;
+border:3px solid #ff8fd1;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+label{
+font-weight:bold;
+}
+
+input, select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+background:#ff4fa3;
+color:white;
+border:none;
+padding:12px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:#c2185b;
+}
+
+/* CLEAR */
+
+section::after{
+content:"";
+display:table;
+clear:both;
+}
+
+/* FOOTER */
+
+footer{
+background:#c2185b;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>FORM PENDAFTARAN</h2>
+</header>
+
+<section>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="gambar.html">Gambar</a>
+<a href="event.html">Event</a>
+<a href="audio.html">Audio</a>
+<a href="video.html">Video</a>
+<a href="svg.html">SVG</a>
+<a href="canvas.html">Canvas</a>
+<a href="pendaftaran.html">Pendaftaran</a>
+</nav>
+
+<article>
+
+<h2>Form Pendaftaran</h2>
+
+<form>
+
+<label>Nama Lengkap</label>
+<input type="text" placeholder="Masukkan nama">
+
+<label>Email</label>
+<input type="email" placeholder="Masukkan email">
+
+<label>Password</label>
+<input type="password" placeholder="Masukkan password">
+
+<label>Jenis Kelamin</label>
+<select>
+<option>Laki-laki</option>
+<option>Perempuan</option>
+</select>
+
+<br><br>
+
+<button type="submit">Daftar</button>
+
+</form>
+
+</article>
+
+</section>
+
+<footer>
+<p>&copy; 2026 - Praktikum HTML5 | Ayla Nur Ramadhani</p>
+</footer>
+
+</body>
+</html>

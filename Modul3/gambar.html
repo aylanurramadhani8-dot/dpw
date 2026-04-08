@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Gambar</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+
+*{box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+margin:0;
+background:#fff0f6;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(90deg,#ff4fa3,#ff8fd1);
+padding:30px;
+text-align:center;
+font-size:35px;
+color:white;
+font-family:'Pacifico',cursive;
+}
+
+/* NAV */
+
+nav{
+float:left;
+width:30%;
+background:#ffd9ec;
+padding:20px;
+border-right:4px solid #ff4f98;
+height:650px;
+}
+
+nav a{
+display:block;
+padding:10px;
+margin-bottom:8px;
+text-decoration:none;
+font-weight:bold;
+color:#c2185b;
+border-radius:6px;
+font-family:'Quicksand',sans-serif;
+transition:0.3s;
+}
+
+nav a:hover{
+background:#ff89ca;
+transform:translateX(5px);
+}
+
+/* ARTICLE */
+
+article{
+float:left;
+width:70%;
+padding:20px;
+background:white;
+height:650px;
+}
+
+article h2{
+font-family:'Quicksand';
+color:#d81b60;
+}
+
+/* GALERI */
+
+.gallery img{
+width:180px;
+margin:10px;
+border-radius:10px;
+border:3px solid #ff8fd1;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* CLEAR */
+
+section::after{
+content:"";
+display:table;
+clear:both;
+}
+
+/* FOOTER */
+
+footer{
+background:#c2185b;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>Halaman Galeri Gambar ^-^</h2>
+</header>
+
+<section>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="gambar.html">Gambar</a>
+<a href="event.html">Event</a>
+<a href="audio.html">Audio</a>
+<a href="video.html">Video</a>
+<a href="svg.html">SVG</a>
+<a href="canvas.html">Canvas</a>
+<a href="pendaftaran.html">Pendaftaran</a>
+</nav>
+
+<article>
+
+<h2>Selamat Datang di Galeri Gambar Lucu ^-^</h2>
+
+<div class="gallery">
+
+<img src="gambar/cat1.jpg">
+<img src="gambar/cat2.jpg">
+<img src="gambar/cat3.jpg">
+<img src="gambar/cat4.jpg">
+
+</div>
+
+</article>
+
+</section>
+
+<footer>
+<p>&copy; 2026 - Praktikum HTML5 | Ayla Nur Ramadhani</p>
+</footer>
+
+</body>
+</html>
