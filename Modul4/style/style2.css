@@ -1,0 +1,22 @@
+p{
+    color:#c2185b;
+    font-family:'Poppins',sans-serif;
+    background:#ffd9ec;
+    font-size:16pt;
+    font-weight:bold;
+    padding:10px;
+    border-radius:10px;
+}
+
+p.group{
+    color:white;
+    background:#ff4fa3;
+    font-size:14pt;
+    font-weight:normal;
+}
+
+p#one{
+    color:#ff4fa3;
+    background:white;
+    border:2px solid #ff4fa3;
+}

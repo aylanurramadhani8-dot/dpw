@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Combinator</title>
+
+<style>
+
+body{
+font-family:'Poppins',sans-serif;
+background:#fff0f6;
+padding:20px;
+}
+
+div{
+background:#ffd9ec;
+padding:15px;
+border-radius:10px;
+}
+
+div p{
+color:#ff4fa3;
+}
+
+div > p{
+background:#ffe4f2;
+}
+
+div + p{
+background:#f8bbd0;
+}
+
+div ~ p{
+color:#c2185b;
+}
+
+p{
+padding:10px;
+border-radius:8px;
+background:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div>
+<p>Paragraf di dalam div</p>
+<p>Paragraf anak div</p>
+</div>
+
+<p>Paragraf setelah div</p>
+<p>Paragraf saudara div</p>
+
+</body>
+</html>
