@@ -1,3 +1,4 @@
-NAMA : AYLA NUR RAMADHANI
-KELAS 2A
-MK : Desain dan Pemograman Web
+(NAMA : AYLA NUR RAMADHANI)
+(KELAS 2A)
+(MK : Desain dan Pemograman Web)
+(DPMK : Angger Binuko)
